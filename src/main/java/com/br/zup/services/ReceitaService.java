@@ -9,9 +9,17 @@ import com.br.zup.repositories.ReceitaRepository;
 @Service
 public class ReceitaService {
 	@Autowired
-	private Rec
+	private ReceitaRepository receitaRepository;
 	
 	public Receita criarReceita (Receita receita) {
-		return 
+		return receitaRepository.save(receita);
 	}
+	public Iterable<Receita> verReceita(){
+		return receitaRepository.findAll();
+	}
+	public Receita verReceitaPorId (int id) {
+		return receitaRepository.findById(id).get();
+	}
+	
+	
 }
