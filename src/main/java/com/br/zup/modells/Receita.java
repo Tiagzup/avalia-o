@@ -20,7 +20,7 @@ public class Receita implements Serializable {
 	@Size(min = 10)
 	private String ingredientes;
 	@NotBlank(message = "Preencha o campo mode de preparo")
-	@Size(min = 140)
+	@Size(min = 10)
 	private String modeDePreparo;
 	
 	public Receita() {
