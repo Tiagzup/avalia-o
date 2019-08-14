@@ -19,9 +19,9 @@ public class Receita implements Serializable {
 	@NotBlank(message = "Preencha o campo ingredientes")
 	@Size(min = 10)
 	private String ingredientes;
-	@NotBlank(message = "Preencha o campo mode de preparo")
+	@NotBlank(message = "Preencha o campo modo de preparo")
 	@Size(min = 10)
-	private String modeDePreparo;
+	private String modoDePreparo;
 	
 	public Receita() {
 		
@@ -51,13 +51,16 @@ public class Receita implements Serializable {
 		this.ingredientes = ingredientes;
 	}
 
-	public String getModeDePreparo() {
-		return modeDePreparo;
+	public String getModoDePreparo() {
+		return modoDePreparo;
 	}
 
-	public void setModeDePreparo(String modeDePreparo) {
-		this.modeDePreparo = modeDePreparo;
+	public void setModoDePreparo(String modoDePreparo) {
+		this.modoDePreparo = modoDePreparo;
 	}
+
+	
+	
 	
 	
 	
